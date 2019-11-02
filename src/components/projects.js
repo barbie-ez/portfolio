@@ -57,6 +57,28 @@ class Projects extends Component {
             <IconButton name="share" />
           </CardMenu>
         </Card>
+        {/*Project 3 */}
+
+        <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
+          <CardTitle style={{ color: '#fff', height: '176px', background: 'url(https://miro.medium.com/max/1500/1*y6C4nSvy2Woe0m7bWEn4BA.png) center / cover' }}>
+
+            React Project #3
+          </CardTitle>
+
+
+
+          <CardText>
+            This is where you write all the things your project is supposed to be about
+          </CardText>
+          <CardActions border>
+            <Button colored>Github</Button>
+            <Button colored>CodePen</Button>
+            <Button colored>Live Demo</Button>
+          </CardActions>
+          <CardMenu style={{ color: '#fff' }}>
+            <IconButton name="share" />
+          </CardMenu>
+        </Card>
         </div>
       )
     }
@@ -91,6 +113,28 @@ class Projects extends Component {
          <CardTitle style={{ color: '#fff', height: '176px', background: 'url(https://ravindranaik.com/wp-content/uploads/2018/08/csharp_api.jpg) center / cover' }}>
 
          C# Project #2
+         </CardTitle>
+
+
+
+         <CardText>
+           This is where you write all the things your project is supposed to be about
+         </CardText>
+         <CardActions border>
+           <Button colored>Github</Button>
+           <Button colored>CodePen</Button>
+           <Button colored>Live Demo</Button>
+         </CardActions>
+         <CardMenu style={{ color: '#fff' }}>
+           <IconButton name="share" />
+         </CardMenu>
+       </Card>
+       {/*Project 3 */}
+
+       <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
+         <CardTitle style={{ color: '#fff', height: '176px', background: 'url(https://ravindranaik.com/wp-content/uploads/2018/08/csharp_api.jpg) center / cover' }}>
+
+         C# Project #3
          </CardTitle>
 
 

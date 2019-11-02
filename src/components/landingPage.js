@@ -5,11 +5,13 @@ function LandingPage() {
     <div style={{ width: "100%", margin: "auto" }}>
       <Grid className="landing-grid">
         <Cell col={12}>
+        
           <img
             src={require("../images/photo.jpg")}
             alt="barbie"
             className="avatar-image"
           />
+          
           <div className="banner-text">
             <h1>Full Stack Web Developer</h1>
             <hr />
