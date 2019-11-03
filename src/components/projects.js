@@ -14,7 +14,7 @@ class Projects extends Component {
         
         <div className="projects-grid">
         {/*Project 1 */}
-        <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
+        <Card shadow={0} style={{ minWidth: '450', margin: 'auto' }}>
           <CardTitle style={{ color: '#fff', height: '176px', background: 'url(https://miro.medium.com/max/1500/1*y6C4nSvy2Woe0m7bWEn4BA.png) center / cover' }}>
 
             React Project #1
@@ -37,7 +37,7 @@ class Projects extends Component {
 
         {/*Project 2 */}
 
-        <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
+        <Card shadow={0} style={{ minWidth: '450', margin: 'auto' }}>
           <CardTitle style={{ color: '#fff', height: '176px', background: 'url(https://miro.medium.com/max/1500/1*y6C4nSvy2Woe0m7bWEn4BA.png) center / cover' }}>
 
             React Project #2
@@ -59,7 +59,7 @@ class Projects extends Component {
         </Card>
         {/*Project 3 */}
 
-        <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
+        <Card shadow={0} style={{ minWidth: '450', margin: 'auto' }}>
           <CardTitle style={{ color: '#fff', height: '176px', background: 'url(https://miro.medium.com/max/1500/1*y6C4nSvy2Woe0m7bWEn4BA.png) center / cover' }}>
 
             React Project #3
@@ -86,7 +86,7 @@ class Projects extends Component {
       return (
         <div className="projects-grid">
          {/*Project 1 */}
-         <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
+         <Card shadow={0} style={{ minWidth: '450', margin: 'auto' }}>
          <CardTitle style={{ color: '#fff', height: '176px', background: 'url(https://ravindranaik.com/wp-content/uploads/2018/08/csharp_api.jpg) center / cover' }}>
 
            C# Project #1
@@ -109,7 +109,7 @@ class Projects extends Component {
 
        {/*Project 2 */}
 
-       <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
+       <Card shadow={0} style={{ minWidth: '450', margin: 'auto' }}>
          <CardTitle style={{ color: '#fff', height: '176px', background: 'url(https://ravindranaik.com/wp-content/uploads/2018/08/csharp_api.jpg) center / cover' }}>
 
          C# Project #2
@@ -131,7 +131,7 @@ class Projects extends Component {
        </Card>
        {/*Project 3 */}
 
-       <Card shadow={5} style={{ minWidth: '450', margin: 'auto' }}>
+       <Card shadow={0} style={{ minWidth: '450', margin: 'auto' }}>
          <CardTitle style={{ color: '#fff', height: '176px', background: 'url(https://ravindranaik.com/wp-content/uploads/2018/08/csharp_api.jpg) center / cover' }}>
 
          C# Project #3
@@ -158,7 +158,7 @@ class Projects extends Component {
 
   render() {
     return (
-      <div className="category-tabs">
+      <div className="category-tabs" id="projects">
         <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
           <Tab>React</Tab>
           <Tab>C#</Tab>

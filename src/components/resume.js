@@ -5,7 +5,7 @@ import Experience from "./experience";
 import Skills from "./skills";
 function Resume() {
   return (
-    <div>
+    <div id ="resume">
       <Grid>
         <Cell col={4}>
           <div style={{ textAlign: 'center' }}>

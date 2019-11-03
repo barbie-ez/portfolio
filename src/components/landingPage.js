@@ -1,11 +1,13 @@
 import React from "react";
 import { Grid, Cell } from "react-mdl";
+
 function LandingPage() {
   return (
-    <div style={{ width: "100%", margin: "auto" }}>
+
+    <div id ="landing-page" style={{ width: "100%", margin: "auto" }}>
       <Grid className="landing-grid">
         <Cell col={12}>
-        
+        <div className="circular--landscape"></div>
           <img
             src={require("../images/photo.jpg")}
             alt="barbie"
@@ -13,11 +15,10 @@ function LandingPage() {
           />
           
           <div className="banner-text">
-            <h1>Full Stack Web Developer</h1>
+            <h1>Barbara Ezomo</h1>
+            <h3>Full Stack Application Developer</h3>
             <hr />
-            <p>
-              C# | ASP.NET Core | React | HTML/CSS | JavaScript | SQL SERVER
-            </p>
+            
             <div className="social-links">
               {/*LinkedIn */}
               <a
@@ -25,7 +26,7 @@ function LandingPage() {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <i className="fa fa-linkedin-square" aria-hidden="true" />
+                <i className="fa fa-linkedin" aria-hidden="true" />
               </a>
               {/*GitHub */}
               <a
@@ -33,7 +34,7 @@ function LandingPage() {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <i className="fa fa-github-square" aria-hidden="true" />
+                <i className="fa fa-github" aria-hidden="true" />
               </a>
               {/*Youtube */}
               <a
@@ -41,14 +42,16 @@ function LandingPage() {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <i className="fa fa-youtube-square" aria-hidden="true" />
+                <i className="fa fa-youtube" aria-hidden="true" />
               </a>
               
             </div>
           </div>
         </Cell>
       </Grid>
+     
     </div>
+
   );
 }
 

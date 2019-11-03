@@ -14,7 +14,11 @@ function Main(){
     <Route path="/contact" component={Contacts} />
     <Route path="/projects" component={Projects} />
     <Route path="/resume" component={Resume} />
+
+ 
   </Switch>
+  
+
   )
 };
 
