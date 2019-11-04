@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="demo-big-content">
       
-      <Header className="header-color landing-grid" style={{textAlign:'left', justifyContent:'center',margin:'auto'}} waterfall>
+      <Header className="header-color landing-grid" style={{textAlign:'left', justifyContent:'center',margin:'auto', padding:"0px"}} waterfall>
         <HeaderRow style={{textAlign:'center', justifyContent:'center',margin:'auto', position: 'fixed', width:'100%'}}
         className="header-color" >
           <Navigation >
