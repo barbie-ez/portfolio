@@ -2,13 +2,10 @@ import React from "react";
 import { Grid, Cell, List, ListItem, ListItemContent } from "react-mdl";
 function Contacts() {
     return (
-        <div className="contact-body">
-            <Grid className="contact-grid">
+        <div className="landing-grid" id="contact">
+            <Grid className="" style={{width:"100%", margin:'auto' ,color:'white'}}>
                 <Cell col={6}>
-                    <h2>
-                        Barbara Ezomo
-
-                    </h2>
+                    
                     <img
                         src={require("../images/photo.jpg")}
                         alt="barbie"
@@ -27,20 +24,20 @@ function Contacts() {
                         <List>
                             <ListItem>
                                 <ListItemContent 
-                                style={{fontSize:'30px',fontFamily:'Anton'}}>
-                                    <i className="fa fa-phone-square" aria-hidden="true"/>08083725113
+                                style={{fontSize:'30px',fontFamily:'Anton',color:'white'}}>
+                                    <i className="fa fa-phone-square" style={{color:'white'}} aria-hidden="true"/>08083725113
                                 </ListItemContent>
                             </ListItem>
                             <ListItem>
                             <ListItemContent 
-                                style={{fontSize:'30px',fontFamily:'Anton'}}>
-                                    <i className="fa fa-envelope" aria-hidden="true"/>ezomo.barbara@gmail.com
+                                style={{fontSize:'30px',fontFamily:'Anton',color:'white'}}>
+                                    <i className="fa fa-envelope" style={{color:'white'}}  aria-hidden="true"/>ezomo.barbara@gmail.com
                                 </ListItemContent>
                             </ListItem>
                             <ListItem>
                             <ListItemContent 
-                                style={{fontSize:'30px',fontFamily:'Anton'}}>
-                                    <i className="fa fa-skype" aria-hidden="true"/>barbaraezomo
+                                style={{fontSize:'30px',fontFamily:'Anton',color:'white'}}>
+                                    <i className="fa fa-skype" style={{color:'white'}}  aria-hidden="true"/>barbaraezomo
                                 </ListItemContent>
                             </ListItem>
                         </List>

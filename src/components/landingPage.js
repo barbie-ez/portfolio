@@ -15,14 +15,14 @@ function LandingPage() {
           />
           
           <div className="banner-text">
-            <h1>Barbara Ezomo</h1>
+            <h1  style={{fontFamily:"Raleway", fontWeight:"700"}} >Barbara Ezomo</h1>
             <h3>Full Stack Application Developer</h3>
             <hr />
             
             <div className="social-links">
               {/*LinkedIn */}
               <a
-                href="http://google.com"
+                href="https://www.linkedin.com/in/barbara-ezomo-5997a495/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
@@ -30,7 +30,7 @@ function LandingPage() {
               </a>
               {/*GitHub */}
               <a
-                href="http://google.com"
+                href="https://github.com/barbie-ez"
                 rel="noopener noreferrer"
                 target="_blank"
               >
@@ -38,7 +38,7 @@ function LandingPage() {
               </a>
               {/*Youtube */}
               <a
-                href="http://google.com"
+                href="https://www.youtube.com/channel/UCmxGAyfwJmGfNjJZnpOmCVw?view_as=subscriber"
                 rel="noopener noreferrer"
                 target="_blank"
               >

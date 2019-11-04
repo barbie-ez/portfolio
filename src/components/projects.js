@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton } from 'react-mdl';
-//import Background from '../images/photo.jpg';
-const Background = require("../images/photo.jpg");
+
 class Projects extends Component {
   constructor(props) {
     super(props);
@@ -11,147 +10,131 @@ class Projects extends Component {
   toggleCategories() {
     if (this.state.activeTab === 0) {
       return (
-        
+
         <div className="projects-grid">
-        {/*Project 1 */}
-        <Card shadow={0} style={{ minWidth: '450', margin: 'auto' }}>
-          <CardTitle style={{ color: '#fff', height: '176px', background: 'url(https://miro.medium.com/max/1500/1*y6C4nSvy2Woe0m7bWEn4BA.png) center / cover' }}>
+          {/*Project 1 */}
+          <Grid style={{ width: "100%", margin: "auto" }}>
+            <Cell col={4}>
+              <Card shadow={5} style={{ width: "100%", margin: 'auto', zIndex: '0', position: 'relative' }}>
+                <CardTitle style={{ color: '#fff', height: '176px', background: 'url(https://miro.medium.com/max/1500/1*y6C4nSvy2Woe0m7bWEn4BA.png) center / cover' }}>
 
-            React Project #1
+                  Diet tracker Application
           </CardTitle>
 
 
 
-          <CardText>
-            This is where you write all the things your project is supposed to be about
+                <CardText>
+                  A simple React client application used to store, track and update diet information
           </CardText>
-          <CardActions border>
-            <Button colored>Github</Button>
-            <Button colored>CodePen</Button>
-            <Button colored>Live Demo</Button>
-          </CardActions>
-          <CardMenu style={{ color: '#fff' }}>
-            <IconButton name="share" />
-          </CardMenu>
-        </Card>
+                <CardActions border>
+                  <Button colored>Github</Button>
+                  <Button colored>Live Demo</Button>
+                </CardActions>
+                <CardMenu style={{ color: '#fff' }}>
+                  <IconButton name="share" />
+                </CardMenu>
+              </Card>
+            </Cell>
+            {/*Project 2 */}
+            <Cell col={4}>
+              <Card shadow={5} style={{ width: "100%", margin: 'auto', zIndex: '0', position: 'relative' }}>
+                <CardTitle style={{ color: '#fff', height: '176px', background: 'url(https://miro.medium.com/max/1500/1*y6C4nSvy2Woe0m7bWEn4BA.png) center / cover' }}>
 
-        {/*Project 2 */}
-
-        <Card shadow={0} style={{ minWidth: '450', margin: 'auto' }}>
-          <CardTitle style={{ color: '#fff', height: '176px', background: 'url(https://miro.medium.com/max/1500/1*y6C4nSvy2Woe0m7bWEn4BA.png) center / cover' }}>
-
-            React Project #2
+                  Ecommerce Client Application
           </CardTitle>
 
 
 
-          <CardText>
-            This is where you write all the things your project is supposed to be about
+                <CardText>
+                  A web application which interfaces with the C# backend to perform shopping tasks
           </CardText>
-          <CardActions border>
-            <Button colored>Github</Button>
-            <Button colored>CodePen</Button>
-            <Button colored>Live Demo</Button>
-          </CardActions>
-          <CardMenu style={{ color: '#fff' }}>
-            <IconButton name="share" />
-          </CardMenu>
-        </Card>
-        {/*Project 3 */}
-
-        <Card shadow={0} style={{ minWidth: '450', margin: 'auto' }}>
-          <CardTitle style={{ color: '#fff', height: '176px', background: 'url(https://miro.medium.com/max/1500/1*y6C4nSvy2Woe0m7bWEn4BA.png) center / cover' }}>
-
-            React Project #3
+                <CardActions border>
+                  <Button colored>Github</Button>
+                  <Button colored>Live Demo</Button>
+                </CardActions>
+                <CardMenu style={{ color: '#fff' }}>
+                  <IconButton name="share" />
+                </CardMenu>
+              </Card>
+            </Cell>
+            {/*Project 3 */}
+            <Cell col={4}>
+              <Card shadow={5} style={{ width: "100%", margin: 'auto', zIndex: '0', position: 'relative' }}>
+                <CardTitle style={{ color: '#fff', height: '176px', background: 'url(https://miro.medium.com/max/1500/1*y6C4nSvy2Woe0m7bWEn4BA.png) center / cover' }}>
+                  Maintenance Management application
           </CardTitle>
 
 
 
-          <CardText>
-            This is where you write all the things your project is supposed to be about
+                <CardText>
+                  This is used by Maintenance staff to keep track of all repairs and repair request in a company
           </CardText>
-          <CardActions border>
-            <Button colored>Github</Button>
-            <Button colored>CodePen</Button>
-            <Button colored>Live Demo</Button>
-          </CardActions>
-          <CardMenu style={{ color: '#fff' }}>
-            <IconButton name="share" />
-          </CardMenu>
-        </Card>
+                <CardActions border>
+                  <Button colored>Github</Button>
+                  <Button colored>Live Demo</Button>
+                </CardActions>
+                <CardMenu style={{ color: '#fff' }}>
+                  <IconButton name="share" />
+                </CardMenu>
+              </Card>
+            </Cell>
+          </Grid>
         </div>
       )
     }
     else if (this.state.activeTab === 1) {
       return (
         <div className="projects-grid">
-         {/*Project 1 */}
-         <Card shadow={0} style={{ minWidth: '450', margin: 'auto' }}>
-         <CardTitle style={{ color: '#fff', height: '176px', background: 'url(https://ravindranaik.com/wp-content/uploads/2018/08/csharp_api.jpg) center / cover' }}>
+          <Grid>
+            {/*Project 1 */}
+            <Cell col={6}>
+              <Card shadow={5} style={{ width: "100%", margin: 'auto', zIndex: '0', position: 'relative' }}>
+                <CardTitle style={{ color: '#fff', height: '176px', background: 'url(https://stackify.com/wp-content/uploads/2019/02/C-Garbage-Collection-Tutorial-881x441.jpg) center / cover' }}>
 
-           C# Project #1
+                  Diet Tracker Api
          </CardTitle>
 
 
 
-         <CardText>
-           This is where you write all the things your project is supposed to be about
+                <CardText>
+                  An ASP .net core web API which feeds in information to the diet tracker client
          </CardText>
-         <CardActions border>
-           <Button colored>Github</Button>
-           <Button colored>CodePen</Button>
-           <Button colored>Live Demo</Button>
-         </CardActions>
-         <CardMenu style={{ color: '#fff' }}>
-           <IconButton name="share" />
-         </CardMenu>
-       </Card>
+                <CardActions border>
+                  <Button colored>Github</Button>
+                  <Button colored>Live Demo</Button>
+                </CardActions>
+                <CardMenu style={{ color: '#fff' }}>
+                  <IconButton name="share" />
+                </CardMenu>
+              </Card>
+            </Cell>
+            {/*Project 2 */}
+            <Cell col={6}>
+              <Card shadow={5} style={{ width: "100%", margin: 'auto', zIndex: '0', position: 'relative' }}>
+                <CardTitle style={{ color: '#fff', height: '176px', background: 'url(https://stackify.com/wp-content/uploads/2019/02/C-Garbage-Collection-Tutorial-881x441.jpg) center / cover' }}>
 
-       {/*Project 2 */}
-
-       <Card shadow={0} style={{ minWidth: '450', margin: 'auto' }}>
-         <CardTitle style={{ color: '#fff', height: '176px', background: 'url(https://ravindranaik.com/wp-content/uploads/2018/08/csharp_api.jpg) center / cover' }}>
-
-         C# Project #2
+                  E-Commerce API
          </CardTitle>
 
 
 
-         <CardText>
-           This is where you write all the things your project is supposed to be about
+                <CardText>
+                  An ASP .net core web API which feeds in information to the  E-Commerce client
          </CardText>
-         <CardActions border>
-           <Button colored>Github</Button>
-           <Button colored>CodePen</Button>
-           <Button colored>Live Demo</Button>
-         </CardActions>
-         <CardMenu style={{ color: '#fff' }}>
-           <IconButton name="share" />
-         </CardMenu>
-       </Card>
-       {/*Project 3 */}
+                <CardActions border>
+                  <Button colored>Github</Button>
+                  <Button colored>Live Demo</Button>
+                </CardActions>
+                <CardMenu style={{ color: '#fff' }}>
+                  <IconButton name="share" />
+                </CardMenu>
+              </Card>
+            </Cell>
+            {/*Project 3 */}
 
-       <Card shadow={0} style={{ minWidth: '450', margin: 'auto' }}>
-         <CardTitle style={{ color: '#fff', height: '176px', background: 'url(https://ravindranaik.com/wp-content/uploads/2018/08/csharp_api.jpg) center / cover' }}>
+          </Grid>
 
-         C# Project #3
-         </CardTitle>
-
-
-
-         <CardText>
-           This is where you write all the things your project is supposed to be about
-         </CardText>
-         <CardActions border>
-           <Button colored>Github</Button>
-           <Button colored>CodePen</Button>
-           <Button colored>Live Demo</Button>
-         </CardActions>
-         <CardMenu style={{ color: '#fff' }}>
-           <IconButton name="share" />
-         </CardMenu>
-       </Card>
-       </div>
+        </div>
       )
     }
   }
@@ -163,11 +146,11 @@ class Projects extends Component {
           <Tab>React</Tab>
           <Tab>C#</Tab>
         </Tabs>
-          <Grid >
-            <Cell col={12}>
-              <div className="content"> {this.toggleCategories()}</div>
-            </Cell>
-          </Grid>
+        <Grid >
+          <Cell col={12}>
+            <div className="content"> {this.toggleCategories()}</div>
+          </Cell>
+        </Grid>
 
       </div>
     );

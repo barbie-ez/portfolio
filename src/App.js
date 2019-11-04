@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
-import Main from './components/main';
-import { Layout, Textfield, HeaderRow, Header, Navigation, Drawer, Content } from 'react-mdl';
+import {HeaderRow, Header, Navigation } from 'react-mdl';
 import { Link } from "react-scroll";
 
 import LandingPage from './components/landingPage';
-import Resume from './components/resume';
 import Projects from './components/projects';
 import AboutMe from './components/aboutMe';
+import WorkExp from './components/workExp';
+import Contacts from './components/contacts';
 function App() {
   return (
     <div className="demo-big-content">
@@ -16,23 +16,23 @@ function App() {
         <HeaderRow style={{textAlign:'center', justifyContent:'center',margin:'auto', position: 'fixed', width:'100%'}}
         className="header-color" >
           <Navigation >
-            <Link style={{fontSize:'25px', fontFamily:"'Open Sans', sans-serif", fontWeight:'bold', textTransform:'uppercase'}}
+            <Link style={{fontSize:'20px', fontFamily:"'Open Sans', sans-serif", fontWeight:'bold', textTransform:'uppercase'}}
               activeClass="active"
               to="landing-page"
               spy={true}
               smooth={true}
               offset={-70}
               duration={500}
-            >Landing</Link>
-            <Link style={{fontSize:'25px', fontFamily:"'Open Sans', sans-serif", fontWeight:'bold', textTransform:'uppercase'}}
+            ><i className="fa fa-home title"></i></Link>
+            <Link style={{fontSize:'20px', fontFamily:"'Open Sans', sans-serif", fontWeight:'bold', textTransform:'uppercase'}}
               activeClass="active"
               to="projects"
               spy={true}
               smooth={true}
               offset={-70}
               duration={500}
-            >Projects</Link>
-            <Link style={{fontSize:'25px', fontFamily:"'Open Sans', sans-serif", fontWeight:'bold', textTransform:'uppercase'}}
+            >Portfolio</Link>
+            <Link style={{fontSize:'20px', fontFamily:"'Open Sans', sans-serif", fontWeight:'bold', textTransform:'uppercase'}}
               activeClass="active"
               to="aboutMe"
               spy={true}
@@ -40,14 +40,24 @@ function App() {
               offset={-70}
               duration={500}
             >About</Link>
-            <Link style={{fontSize:'25px', fontFamily:"'Open Sans', sans-serif", fontWeight:'bold', textTransform:'uppercase'}}
+          
+            <Link style={{fontSize:'20px', fontFamily:"'Open Sans', sans-serif", fontWeight:'bold', textTransform:'uppercase'}}
               activeClass="active"
-              to="resume"
+              to="workexp"
               spy={true}
               smooth={true}
               offset={-70}
               duration={500}
-            >Experience</Link>
+            >Work Experience</Link>
+
+            <Link style={{fontSize:'20px', fontFamily:"'Open Sans', sans-serif", fontWeight:'bold', textTransform:'uppercase'}}
+              activeClass="active"
+              to="contact"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >Contact</Link>
           </Navigation>
         </HeaderRow>
       </Header>
@@ -58,7 +68,9 @@ function App() {
 
       <Projects />
       <AboutMe/>
-      <Resume />
+      
+      <WorkExp/>
+      <Contacts/>
 
     </div>
 
